@@ -1,23 +1,43 @@
 {
   "name": "app",
-  "version": "0.1.0",
+  "version": "0.0.1",
+  "description": "frontend/monolitic template",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
+    "next": "13.5.4",
+    "react": "18",
+    "react-dom": "18"
   },
   "devDependencies": {
-    "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4"
-  }
+    "@storybook/addon-essentials": "7.4.6",
+    "@storybook/addon-interactions": "7.4.6",
+    "@storybook/addon-links": "7.4.6",
+    "@storybook/addon-onboarding": "1.0.8",
+    "@storybook/addon-styling-webpack": "0.0.5",
+    "@storybook/blocks": "7.4.6",
+    "@storybook/nextjs": "7.4.6",
+    "@storybook/react": "7.4.6",
+    "@storybook/testing-library": "0.2.2",
+    "autoprefixer": "10",
+    "eslint": "8",
+    "eslint-config-next": "13.5.4",
+    "eslint-plugin-storybook": "0.6.15",
+    "postcss": "8",
+    "storybook": "7.4.6",
+    "tailwindcss": "3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ytal"
+  },
+  "author": "@ponchoceniceros",
+  "license": "ISC"
 }
